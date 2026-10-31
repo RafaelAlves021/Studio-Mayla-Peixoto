@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Mayla Peixoto | Nail Design, Cílios e Sobrancelhas em Madureira - RJ</title>
+  <meta name="description" content="Studio Mayla Peixoto: Especialista em alongamento de unhas, banho de gel, nail design, brow lamination e extensão de cílios em Madureira, Rio de Janeiro. Agende seu horário!">
+  
+  <!-- Open Graph / Meta Compartilhamento -->
+  <meta property="og:title" content="Studio Mayla Peixoto | Estúdio de Beleza em Madureira">
+  <meta property="og:description" content="Realce sua beleza. Alongamento de unhas, sobrancelhas e cílios em Madureira - RJ.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Playfair Display + Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET & VARIÁVEIS DE DESIGN SYSTEM
+       ========================================================================== */
+    :root {
+      --color-dark: #111111;
+      --color-dark-card: #18181a;
+      --color-rose: #E8A0B5;
+      --color-rose-light: #F8E8ED;
+      --color-white: #FFFFFF;
+      --color-champagne: #C9A46A;
+      --color-champagne-light: #f2dec0;
+      --color-text-muted: #a3a3a3;
+      
+      --gradient-rose-gold: linear-gradient(135deg, #E8A0B5 0%, #C9A46A 100%);
+      --gradient-dark-glass: linear-gradient(135deg, rgba(25, 25, 28, 0.85) 0%, rgba(17, 17, 17, 0.95) 100%);
+      
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Montserrat', sans-serif;
+      
+      --transition-base: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      --shadow-glow: 0 0 25px rgba(232, 160, 181, 0.25);
+      --shadow-gold: 0 0 25px rgba(201, 164, 106, 0.25);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--color-dark);
+      color: var(--color-white);
+    }
+
+    body {
+      font-family: var(--font-body);
+      line-height: 1.6;
+      background-color: var(--color-dark);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-base);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Utilitários de Layout */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-padding {
+      padding: 6rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .section-padding {
+        padding: 4rem 0;
+      }
+    }
+
+    /* Tipografia Decorativa */
+    .title-serif {
+      font-family: var(--font-heading);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .gradient-text {
+      background: var(--gradient-rose-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3.5rem auto;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--color-champagne);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+      padding: 0.35rem 1rem;
+      background: rgba(201, 164, 106, 0.1);
+      border: 1px solid rgba(201, 164, 106, 0.2);
+      border-radius: var(--radius-full);
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+      line-height: 1.25;
+    }
+
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 2.75rem;
+      }
+    }
+
+    .section-subtitle {
+      color: var(--color-text-muted);
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    /* Botões de Conversão */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.9rem 1.8rem;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      border: none;
+      transition: var(--transition-base);
+    }
+
+    .btn-primary {
+      background: var(--gradient-rose-gold);
+      color: var(--color-dark);
+      box-shadow: 0 4px 20px rgba(232, 160, 181, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(232, 160, 181, 0.5);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--color-white);
+      border: 1px solid rgba(232, 160, 181, 0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-outline:hover {
+      background: rgba(232, 160, 181, 0.15);
+      border-color: var(--color-rose);
+      color: var(--color-white);
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.8rem;
+    }
+
+    /* ==========================================================================
+       HEADER FIXO E NAVEGAÇÃO
+       ========================================================================== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.4s ease, backdrop-filter 0.4s ease, padding 0.4s ease, border-color 0.4s ease;
+      padding: 1.25rem 0;
+      background: transparent;
+      border-bottom: 1px solid transparent;
+    }
+
+    .site-header.scrolled {
+      background: rgba(17, 17, 17, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(232, 160, 181, 0.15);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logotipo Tipográfico */
+    .logo-brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-name {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--color-white);
+    }
+
+    .logo-sub {
+      font-size: 0.62rem;
+      letter-spacing: 0.32em;
+      color: var(--color-champagne);
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      color: rgba(255, 255, 255, 0.85);
+      position: relative;
+      padding: 0.25rem 0;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gradient-rose-gold);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--color-rose);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Hamburguer Mobile */
+    .hamburger-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 1100;
+    }
+
+    .hamburger-icon {
+      width: 26px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .hamburger-icon span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: var(--color-white);
+      border-radius: 2px;
+      transition: var(--transition-base);
+    }
+
+    .hamburger-btn.active .hamburger-icon span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+      background: var(--color-rose);
+    }
+    .hamburger-btn.active .hamburger-icon span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger-btn.active .hamburger-icon span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+      background: var(--color-rose);
+    }
+
+    @media (max-width: 992px) {
+      .hamburger-btn {
+        display: block;
+      }
+
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 380px;
+        height: 100vh;
+        background: rgba(17, 17, 17, 0.98);
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        box-shadow: -15px 0 35px rgba(0, 0, 0, 0.7);
+        border-left: 1px solid rgba(232, 160, 181, 0.15);
+        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        padding: 2rem;
+      }
+
+      .nav-menu.active {
+        right: 0;
+      }
+
+      .nav-link {
+        font-size: 1.25rem;
+      }
+
+      .header-cta-desktop {
+        display: none;
+      }
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-top: 7rem;
+      padding-bottom: 4rem;
+      overflow: hidden;
+      background: radial-gradient(circle at 80% 20%, rgba(232, 160, 181, 0.12) 0%, transparent 50%),
+                  radial-gradient(circle at 20% 80%, rgba(201, 164, 106, 0.08) 0%, transparent 60%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+    }
+
+    .hero-badges-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-pill {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      padding: 0.4rem 0.9rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(232, 160, 181, 0.25);
+      border-radius: var(--radius-full);
+      color: var(--color-rose-light);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-pill span.dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-rose);
+      box-shadow: 0 0 8px var(--color-rose);
+    }
+
+    .hero-title {
+      font-size: 2.75rem;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+      color: var(--color-white);
+    }
+
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 3.75rem;
+      }
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      margin-bottom: 2.25rem;
+      max-width: 540px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      align-items: center;
+    }
+
+    /* Imagem Hero Estilizada com Moldura Futurista */
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-image-frame {
+      position: relative;
+      border-radius: var(--radius-lg);
+      padding: 8px;
+      background: linear-gradient(135deg, rgba(232, 160, 181, 0.4), rgba(201, 164, 106, 0.2) 50%, rgba(255, 255, 255, 0.05));
+      box-shadow: var(--shadow-glow);
+    }
+
+    .hero-image-inner {
+      border-radius: calc(var(--radius-lg) - 4px);
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      position: relative;
+    }
+
+    .hero-image-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.02);
+      transition: transform 0.7s ease;
+    }
+
+    .hero-visual:hover .hero-image-inner img {
+      transform: scale(1.06);
+    }
+
+    .hero-float-tag {
+      position: absolute;
+      bottom: -20px;
+      left: 10%;
+      background: rgba(20, 20, 24, 0.85);
+      border: 1px solid rgba(232, 160, 181, 0.3);
+      backdrop-filter: blur(12px);
+      padding: 0.85rem 1.4rem;
+      border-radius: var(--radius-md);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      animation: floatBadge 4s ease-in-out infinite;
+    }
+
+    @keyframes floatBadge {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .hero-float-tag .star-icon {
+      color: var(--color-champagne);
+      font-size: 1.2rem;
+    }
+
+    .hero-float-text {
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .hero-float-text small {
+      display: block;
+      color: var(--color-text-muted);
+      font-size: 0.7rem;
+      font-weight: 400;
+    }
+
+    /* ==========================================================================
+       SEÇÃO DE SERVIÇOS (CARDS COM GLASSMORPHISM)
+       ========================================================================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+    }
+
+    @media (min-width: 640px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .service-card {
+      background: var(--color-dark-card);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-base);
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(232, 160, 181, 0.4);
+      box-shadow: 0 15px 35px -10px rgba(232, 160, 181, 0.2);
+    }
+
+    .service-card-media {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .service-card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .service-card:hover .service-card-media img {
+      transform: scale(1.08);
+    }
+
+    .service-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(17, 17, 17, 0.75);
+      border: 1px solid rgba(232, 160, 181, 0.3);
+      backdrop-filter: blur(8px);
+      color: var(--color-champagne);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .service-card-body {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-title {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-white);
+    }
+
+    .service-list {
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .service-list li {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 0.45rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .service-list li::before {
+      content: '◆';
+      color: var(--color-rose);
+      font-size: 0.55rem;
+    }
+
+    .service-cta-btn {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: var(--radius-sm);
+      background: rgba(232, 160, 181, 0.08);
+      border: 1px solid rgba(232, 160, 181, 0.25);
+      color: var(--color-rose);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: var(--transition-base);
+    }
+
+    .service-card:hover .service-cta-btn {
+      background: var(--gradient-rose-gold);
+      color: var(--color-dark);
+      border-color: transparent;
+    }
+
+    /* ==========================================================================
+       SEÇÃO ESPECIAL — NAIL DESIGN
+       ========================================================================== */
+    .special-nail-section {
+      background: linear-gradient(180deg, var(--color-dark) 0%, #17151a 50%, var(--color-dark) 100%);
+      position: relative;
+      border-top: 1px solid rgba(232, 160, 181, 0.1);
+      border-bottom: 1px solid rgba(232, 160, 181, 0.1);
+    }
+
+    .special-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      .special-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .special-mosaic {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .mosaic-item {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(232, 160, 181, 0.2);
+    }
+
+    .mosaic-item:nth-child(1) {
+      transform: translateY(1.5rem);
+    }
+
+    .mosaic-item:nth-child(2) {
+      transform: translateY(-1.5rem);
+    }
+
+    .mosaic-item img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .mosaic-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .special-feature-list {
+      margin: 1.75rem 0 2.25rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .special-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .feature-icon-wrapper {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(201, 164, 106, 0.15);
+      border: 1px solid rgba(201, 164, 106, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-champagne);
+      flex-shrink: 0;
+    }
+
+    .feature-text h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-white);
+      margin-bottom: 0.2rem;
+    }
+
+    .feature-text p {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ==========================================================================
+       GALERIA EDITORIAL COM LIGHTBOX
+       ========================================================================== */
+    .gallery-filter-tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.75);
+      padding: 0.45rem 1.1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition-base);
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--gradient-rose-gold);
+      color: var(--color-dark);
+      border-color: transparent;
+      font-weight: 600;
+    }
+
+    .gallery-masonry-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 580px) {
+      .gallery-masonry-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .gallery-masonry-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .gallery-card {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      cursor: pointer;
+      background: var(--color-dark-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      aspect-ratio: 1 / 1;
+    }
+
+    .gallery-card.tall {
+      aspect-ratio: 3 / 4;
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0.2) 60%, transparent 100%);
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      transition: opacity 0.35s ease;
+    }
+
+    .gallery-card:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-category {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-champagne);
+      font-weight: 600;
+    }
+
+    .gallery-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      color: var(--color-white);
+      margin-top: 0.25rem;
+    }
+
+    .gallery-zoom-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 34px;
+      height: 34px;
+      background: rgba(232, 160, 181, 0.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      backdrop-filter: blur(5px);
+    }
+
+    /* Modal / Lightbox */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(10, 10, 12, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .lightbox-content-box {
+      position: relative;
+      max-width: 850px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: var(--radius-md);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(232, 160, 181, 0.3);
+      object-fit: contain;
+    }
+
+    .lightbox-caption {
+      margin-top: 1rem;
+      color: var(--color-white);
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: -45px;
+      right: 0;
+      background: transparent;
+      border: none;
+      color: var(--color-white);
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.2s ease;
+    }
+
+    .lightbox-close-btn:hover {
+      color: var(--color-rose);
+    }
+
+    /* ==========================================================================
+       SEÇÃO SOBRE A PROFISSIONAL
+       ========================================================================== */
+    .about-section {
+      position: relative;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      .about-grid {
+        grid-template-columns: 0.9fr 1.1fr;
+      }
+    }
+
+    .about-photo-wrapper {
+      position: relative;
+    }
+
+    .about-photo-frame {
+      border-radius: var(--radius-lg);
+      padding: 10px;
+      background: linear-gradient(135deg, rgba(201, 164, 106, 0.4), rgba(232, 160, 181, 0.3) 60%, rgba(255, 255, 255, 0.05));
+    }
+
+    .about-photo-frame img {
+      border-radius: calc(var(--radius-lg) - 6px);
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+
+    .about-content h3 {
+      font-size: 2.25rem;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text {
+      color: var(--color-text-muted);
+      font-size: 1.02rem;
+      line-height: 1.8;
+      font-weight: 300;
+      margin-bottom: 1.75rem;
+    }
+
+    .about-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .metric-number {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      color: var(--color-champagne);
+      font-weight: 700;
+    }
+
+    .metric-label {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ==========================================================================
+       SEÇÃO INSTAGRAM
+       ========================================================================== */
+    .insta-feed-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .insta-feed-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .insta-post {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .insta-post img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .insta-post:hover img {
+      transform: scale(1.08);
+    }
+
+    .insta-post-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(17, 17, 17, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .insta-post:hover .insta-post-overlay {
+      opacity: 1;
+    }
+
+    .insta-icon-svg {
+      width: 32px;
+      height: 32px;
+      fill: var(--color-rose);
+    }
+
+    /* ==========================================================================
+       SEÇÃO DE AGENDAMENTO / CONVERSÃO VIP
+       ========================================================================== */
+    .booking-cta-section {
+      background: radial-gradient(circle at center, rgba(232, 160, 181, 0.15) 0%, rgba(17, 17, 17, 0.98) 75%);
+      position: relative;
+    }
+
+    .booking-card {
+      background: var(--gradient-dark-glass);
+      border: 1px solid rgba(232, 160, 181, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), var(--shadow-glow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .booking-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(201, 164, 106, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .booking-card h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .booking-card h2 {
+        font-size: 3rem;
+      }
+    }
+
+    .booking-card p {
+      color: var(--color-rose-light);
+      max-width: 620px;
+      margin: 0 auto 2.5rem auto;
+      font-weight: 300;
+      font-size: 1.05rem;
+    }
+
+    .btn-large-cta {
+      font-size: 1.05rem;
+      padding: 1.15rem 2.5rem;
+      letter-spacing: 0.06em;
+      box-shadow: 0 10px 30px rgba(232, 160, 181, 0.4);
+    }
+
+    .booking-contact-quick {
+      margin-top: 1.75rem;
+      font-size: 0.9rem;
+      color: var(--color-champagne);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* ==========================================================================
+       SEÇÃO DE LOCALIZAÇÃO & MAPA
+       ========================================================================== */
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      .location-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .location-details-box {
+      background: var(--color-dark-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+    }
+
+    .location-details-box h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .location-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .location-icon {
+      color: var(--color-rose);
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .location-text strong {
+      display: block;
+      color: var(--color-white);
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .location-text span {
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      display: block;
+    }
+
+    .map-frame-wrapper {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid rgba(232, 160, 181, 0.3);
+      box-shadow: var(--shadow-soft);
+      height: 380px;
+    }
+
+    .map-frame-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* ==========================================================================
+       FOOTER ELEGANTE
+       ========================================================================== */
+    .site-footer {
+      background: #0d0d0f;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 4.5rem 0 2rem 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr;
+      }
+    }
+
+    .footer-about p {
+      color: var(--color-text-muted);
+      font-size: 0.88rem;
+      line-height: 1.7;
+      margin-top: 1rem;
+      max-width: 320px;
+    }
+
+    .footer-col-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      color: var(--color-white);
+      margin-bottom: 1.25rem;
+      position: relative;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: var(--color-text-muted);
+      font-size: 0.88rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-rose);
+      padding-left: 4px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+      color: var(--color-text-muted);
+      font-size: 0.8rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    /* ==========================================================================
+       BOTÃO FLUTUANTE WHATSAPP COM BADGE
+       ========================================================================== */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .whatsapp-badge-pulse {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-badge-pulse:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-badge-pulse::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid #25D366;
+      animation: pulseWhatsApp 2s infinite;
+    }
+
+    @keyframes pulseWhatsApp {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+
+    .whatsapp-label-box {
+      background: rgba(17, 17, 17, 0.9);
+      border: 1px solid rgba(232, 160, 181, 0.3);
+      backdrop-filter: blur(8px);
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-white);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .whatsapp-label-box {
+        display: block;
+      }
+    }
+
+    /* Animações de Scroll (Intersection Observer) */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-on-scroll.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER FIXO
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-content">
+      <a href="#inicio" class="logo-brand">
+        <span class="logo-name">MAYLA PEIXOTO</span>
+        <span class="logo-sub">STUDIO DE BELEZA</span>
+      </a>
+
+      <!-- Navegação Principal -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#nail-design" class="nav-link">Nail Design</a>
+        <a href="#galeria" class="nav-link">Galeria</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#localizacao" class="nav-link">Contato</a>
+        <!-- Botão visível apenas dentro do menu no mobile -->
+        <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Conheci%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20e%20agendar%20um%20hor%C3%A1rio." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-primary btn-sm" 
+           style="display: none;" 
+           id="menuMobileBtn">Agendar horário</a>
+      </nav>
+
+      <!-- Botão Header Desktop -->
+      <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Conheci%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20e%20agendar%20um%20hor%C3%A1rio." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="btn btn-primary btn-sm header-cta-desktop">
+        Agendar horário
+      </a>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menu de navegação">
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badges-group">
+            <span class="hero-pill"><span class="dot"></span> Especialista em beleza</span>
+            <span class="hero-pill"><span class="dot"></span> Procedimentos personalizados</span>
+            <span class="hero-pill"><span class="dot"></span> Madureira – RJ</span>
+          </div>
+
+          <h1 class="hero-title title-serif">
+            Realce sua beleza. <br>
+            <span class="gradient-text">Valorize sua essência.</span>
+          </h1>
+
+          <p class="hero-desc">
+            Especialista em unhas, sobrancelhas e cílios. Experimente um atendimento personalizado em Madureira e descubra o poder transformador dos detalhes.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Conheci%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20e%20agendar%20um%20hor%C3%A1rio." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.24-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.3 3.8.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1 1.24-.2 1.47-.94 1.47-.94z"/></svg>
+              Agendar pelo WhatsApp
+            </a>
+            <a href="#servicos" class="btn btn-outline">
+              Conhecer procedimentos
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-on-scroll">
+          <div class="hero-image-frame">
+            <div class="hero-image-inner">
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80" 
+                   alt="Manicure sofisticada e nail design elegante do Studio Mayla Peixoto" 
+                   loading="eager">
+            </div>
+          </div>
+          <div class="hero-float-tag">
+            <span class="star-icon">★</span>
+            <div class="hero-float-text">
+              Studio Mayla Peixoto
+              <small>Excelência & Sofisticação em Madureira</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DE SERVIÇOS
+         ========================================================================== -->
+    <section class="section-padding" id="servicos">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Menu de Serviços</span>
+          <h2 class="section-title title-serif">Procedimentos Exclusivos</h2>
+          <p class="section-subtitle">
+            Técnicas avançadas, produtos de alta durabilidade e atenção minuciosa para garantir resultados impecáveis e naturais.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Alongamento de Unhas -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-media">
+              <span class="service-badge">Mais Procurado</span>
+              <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=700&q=80" 
+                   alt="Alongamento de Unhas Studio Mayla Peixoto" 
+                   loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title">Alongamento de Unhas</h3>
+              <ul class="service-list">
+                <li>Acrigel</li>
+                <li>Mold F1</li>
+                <li>Método Híbrido</li>
+                <li>Postiça Realista</li>
+              </ul>
+              <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Gostaria%20de%20agendar%20um%20Alongamento%20de%20Unhas." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="service-cta-btn">
+                Agendar Alongamento
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Banho de Gel -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-media">
+              <span class="service-badge">Resistência</span>
+              <img src="https://images.unsplash.com/photo-1519014816548-bf7851dd4f42?auto=format&fit=crop&w=700&q=80" 
+                   alt="Banho de Gel nas Unhas" 
+                   loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title">Banho de Gel</h3>
+              <ul class="service-list">
+                <li>Fortalecimento das unhas naturais</li>
+                <li>Acabamento sofisticado e vitrificado</li>
+                <li>Maior resistência e durabilidade</li>
+                <li>Crescimento saudável da lâmina</li>
+              </ul>
+              <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Gostaria%20de%20agendar%20um%20Banho%20de%20Gel." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="service-cta-btn">
+                Agendar Banho de Gel
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Manicure e Pedicure -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-media">
+              <span class="service-badge">Cuidado Essencial</span>
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" 
+                   alt="Manicure e Pedicure Tradicional e Spa" 
+                   loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title">Manicure e Pedicure</h3>
+              <ul class="service-list">
+                <li>Cuidados e embelezamento das unhas</li>
+                <li>Cutilagem higiênica e suave</li>
+                <li>Acabamento delicado e personalizado</li>
+                <li>Esmaltação de alta fixação</li>
+              </ul>
+              <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Gostaria%20de%20agendar%20Manicure%20e%20Pedicure." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="service-cta-btn">
+                Agendar Manicure/Pedicure
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Design de Sobrancelhas -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-media">
+              <span class="service-badge">Harmonia Facial</span>
+              <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=700&q=80" 
+                   alt="Design de Sobrancelhas com Henna" 
+                   loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title">Design de Sobrancelhas</h3>
+              <ul class="service-list">
+                <li>Design com Henna personalizada</li>
+                <li>Design sem Henna (visagismo natural)</li>
+                <li>Mapeamento facial minucioso</li>
+                <li>Valorização da expressão facial</li>
+              </ul>
+              <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Gostaria%20de%20agendar%20Design%20de%20Sobrancelhas." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="service-cta-btn">
+                Agendar Sobrancelhas
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5: Brow Lamination -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-media">
+              <span class="service-badge">Tendência Internacional</span>
+              <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80" 
+                   alt="Brow Lamination Mayla Peixoto" 
+                   loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title">Brow Lamination</h3>
+              <ul class="service-list">
+                <li>Alinhamento direcional dos fios</li>
+                <li>Efeito de sobrancelhas mais cheias</li>
+                <li>Nutrição profunda com hidratação</li>
+                <li>Definição moderna e versátil</li>
+              </ul>
+              <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Gostaria%20de%20agendar%20Brow%20Lamination." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="service-cta-btn">
+                Agendar Brow Lamination
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 6: Alongamento de Cílios -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-media">
+              <span class="service-badge">Olhar Marcante</span>
+              <img src="https://images.unsplash.com/photo-1588514912906-8c5e6361a686?auto=format&fit=crop&w=700&q=80" 
+                   alt="Alongamento de Cílios Volume Brasileiro" 
+                   loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-title">Alongamento de Cílios</h3>
+              <ul class="service-list">
+                <li>Volume Brasileiro</li>
+                <li>Volume Egípcio</li>
+                <li>Mega Volume luxuoso</li>
+                <li>Isolamento perfeito e leveza</li>
+              </ul>
+              <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Gostaria%20de%20agendar%20Alongamento%20de%20C%C3%ADlios." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="service-cta-btn">
+                Agendar Cílios
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO ESPECIAL — NAIL DESIGN
+         ========================================================================== -->
+    <section class="section-padding special-nail-section" id="nail-design">
+      <div class="container special-grid">
+        <div class="special-mosaic reveal-on-scroll">
+          <div class="mosaic-item">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" 
+                 alt="Nail Design com detalhes dourados" 
+                 loading="lazy">
+          </div>
+          <div class="mosaic-item">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80" 
+                 alt="Alongamento estruturado e esmaltação premium" 
+                 loading="lazy">
+          </div>
+        </div>
+
+        <div class="special-info reveal-on-scroll">
+          <span class="section-tag">Exclusividade Mayla Peixoto</span>
+          <h2 class="section-title title-serif">
+            Unhas que são verdadeiras <br>
+            <span class="gradient-text">obras de arte.</span>
+          </h2>
+          <p class="section-subtitle">
+            Do clássico minimalista ao design mais arrojado, cada detalhe é esculpido para expressar seu estilo único e elevar sua autoconfiança.
+          </p>
+
+          <div class="special-feature-list">
+            <div class="special-feature-item">
+              <div class="feature-icon-wrapper">✓</div>
+              <div class="feature-text">
+                <h4>Formatos e Simetria Perfeitos</h4>
+                <p>Almond, bailarina, quadrado ou stiletto com curvatura C natural e duradoura.</p>
+              </div>
+            </div>
+
+            <div class="special-feature-item">
+              <div class="feature-icon-wrapper">✓</div>
+              <div class="feature-text">
+                <h4>Nail Art Personalizada</h4>
+                <p>Francesinhas sofisticadas, encapsuladas, efeito mármore e aplicações em folha de ouro.</p>
+              </div>
+            </div>
+
+            <div class="special-feature-item">
+              <div class="feature-icon-wrapper">✓</div>
+              <div class="feature-text">
+                <h4>Durabilidade Extrema & Brilho Espelhado</h4>
+                <p>Produtos selecionados de marcas líderes para garantir unhas impecáveis por semanas.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Adorei%20a%20se%C3%A7%C3%A3o%20de%20Nail%20Design%20e%20gostaria%20de%20personalizar%20minhas%20unhas." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-primary">
+            Quero Minhas Unhas Perfeitas
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GALERIA DE TRABALHOS (GRID EDITORIAL + LIGHTBOX)
+         ========================================================================== -->
+    <section class="section-padding" id="galeria">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Portfólio Real</span>
+          <h2 class="section-title title-serif">Galeria de Transformações</h2>
+          <p class="section-subtitle">
+            Clique nas fotografias para visualizá-las em alta definição. Resultados reais criados com amor e precisão.
+          </p>
+        </div>
+
+        <div class="gallery-masonry-grid">
+          <!-- Item 1 -->
+          <div class="gallery-card tall reveal-on-scroll" 
+               data-category="unhas" 
+               data-full="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=85" 
+               data-caption="Alongamento Acrigel com Nail Art Delicada">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" 
+                 alt="Alongamento Acrigel com Nail Art Delicada" 
+                 loading="lazy">
+            <div class="gallery-zoom-icon">🔍</div>
+            <div class="gallery-overlay">
+              <span class="gallery-category">Alongamento de Unhas</span>
+              <h4 class="gallery-card-title">Acrigel & Acabamento Fino</h4>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-card reveal-on-scroll" 
+               data-category="cilios" 
+               data-full="https://images.unsplash.com/photo-1588514912906-8c5e6361a686?auto=format&fit=crop&w=1200&q=85" 
+               data-caption="Extensão de Cílios Volume Brasileiro">
+            <img src="https://images.unsplash.com/photo-1588514912906-8c5e6361a686?auto=format&fit=crop&w=600&q=80" 
+                 alt="Extensão de Cílios Volume Brasileiro" 
+                 loading="lazy">
+            <div class="gallery-zoom-icon">🔍</div>
+            <div class="gallery-overlay">
+              <span class="gallery-category">Cílios</span>
+              <h4 class="gallery-card-title">Volume Brasileiro Marcante</h4>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-card tall reveal-on-scroll" 
+               data-category="sobrancelhas" 
+               data-full="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=85" 
+               data-caption="Brow Lamination & Alinhamento de Fios">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" 
+                 alt="Brow Lamination & Alinhamento de Fios" 
+                 loading="lazy">
+            <div class="gallery-zoom-icon">🔍</div>
+            <div class="gallery-overlay">
+              <span class="gallery-category">Sobrancelhas</span>
+              <h4 class="gallery-card-title">Brow Lamination</h4>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-card reveal-on-scroll" 
+               data-category="unhas" 
+               data-full="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=1200&q=85" 
+               data-caption="Banho de Gel com Brilho Vitrificado">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80" 
+                 alt="Banho de Gel com Brilho Vitrificado" 
+                 loading="lazy">
+            <div class="gallery-zoom-icon">🔍</div>
+            <div class="gallery-overlay">
+              <span class="gallery-category">Banho de Gel</span>
+              <h4 class="gallery-card-title">Fortalecimento e Brilho</h4>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-card reveal-on-scroll" 
+               data-category="sobrancelhas" 
+               data-full="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=1200&q=85" 
+               data-caption="Design Personalizado com Henna">
+            <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=600&q=80" 
+                 alt="Design Personalizado com Henna" 
+                 loading="lazy">
+            <div class="gallery-zoom-icon">🔍</div>
+            <div class="gallery-overlay">
+              <span class="gallery-category">Design de Sobrancelhas</span>
+              <h4 class="gallery-card-title">Harmonia e Definição</h4>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-card tall reveal-on-scroll" 
+               data-category="unhas" 
+               data-full="https://images.unsplash.com/photo-1519014816548-bf7851dd4f42?auto=format&fit=crop&w=1200&q=85" 
+               data-caption="Mold F1 com Esmaltação Elegante">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf7851dd4f42?auto=format&fit=crop&w=600&q=80" 
+                 alt="Mold F1 com Esmaltação Elegante" 
+                 loading="lazy">
+            <div class="gallery-zoom-icon">🔍</div>
+            <div class="gallery-overlay">
+              <span class="gallery-category">Mold F1</span>
+              <h4 class="gallery-card-title">Precisão & Naturalidade</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Lightbox -->
+    <div class="lightbox-modal" id="lightboxModal">
+      <div class="lightbox-content-box">
+        <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Fechar ampliação">&times;</button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         SEÇÃO SOBRE A PROFISSIONAL
+         ========================================================================== -->
+    <section class="section-padding about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-photo-wrapper reveal-on-scroll">
+          <div class="about-photo-frame">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" 
+                 alt="Mayla Peixoto - Fundadora e Especialista em Beleza" 
+                 loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-content reveal-on-scroll">
+          <span class="section-tag">Conheça a Profissional</span>
+          <h2 class="section-title title-serif">
+            Beleza, cuidado e dedicação <br>
+            <span class="gradient-text">em cada detalhe.</span>
+          </h2>
+
+          <p class="about-text">
+            No Studio Mayla Peixoto, cada atendimento é realizado com extrema atenção aos detalhes, dedicação e compromisso em valorizar a beleza e a autoestima de cada cliente.
+          </p>
+          <p class="about-text">
+            Nosso objetivo é proporcionar uma experiência especial e acolhedora em Madureira, com procedimentos personalizados e resultados que valorizam autenticamente o seu estilo, combinando técnicas contemporâneas e biossegurança rigorosa.
+          </p>
+
+          <div class="about-metrics">
+            <div class="metric-item">
+              <div class="metric-number">100%</div>
+              <div class="metric-label">Personalizado</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number">+Alto</div>
+              <div class="metric-label">Padrão de Higiene</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number">Madureira</div>
+              <div class="metric-label">Shopping Days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DO INSTAGRAM
+         ========================================================================== -->
+    <section class="section-padding" style="background: rgba(0,0,0,0.25);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Redes Sociais</span>
+          <h2 class="section-title title-serif">Um pouco mais do nosso universo</h2>
+          <p class="section-subtitle">
+            Acompanhe nossos trabalhos, novidades e resultados diários pelo Instagram oficial.
+          </p>
+        </div>
+
+        <div class="insta-feed-grid reveal-on-scroll">
+          <a href="https://www.instagram.com/maylapeixotobeauty/" target="_blank" rel="noopener noreferrer" class="insta-post">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 1" loading="lazy">
+            <div class="insta-post-overlay">
+              <svg class="insta-icon-svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/maylapeixotobeauty/" target="_blank" rel="noopener noreferrer" class="insta-post">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 2" loading="lazy">
+            <div class="insta-post-overlay">
+              <svg class="insta-icon-svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/maylapeixotobeauty/" target="_blank" rel="noopener noreferrer" class="insta-post">
+            <img src="https://images.unsplash.com/photo-1588514912906-8c5e6361a686?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 3" loading="lazy">
+            <div class="insta-post-overlay">
+              <svg class="insta-icon-svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/maylapeixotobeauty/" target="_blank" rel="noopener noreferrer" class="insta-post">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 4" loading="lazy">
+            <div class="insta-post-overlay">
+              <svg class="insta-icon-svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+          </a>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="https://www.instagram.com/maylapeixotobeauty/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-outline">
+            Seguir @maylapeixotobeauty
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DE AGENDAMENTO (CONVERSÃO MÁXIMA)
+         ========================================================================== -->
+    <section class="section-padding booking-cta-section" id="agendamento">
+      <div class="container">
+        <div class="booking-card reveal-on-scroll">
+          <span class="section-tag">Agendamento Exclusivo</span>
+          <h2 class="title-serif">Sua próxima transformação <br><span class="gradient-text">começa aqui.</span></h2>
+          <p>
+            Escolha seu procedimento e entre em contato para consultar disponibilidade de agenda. Garanta seu atendimento personalizado com hora marcada em Madureira.
+          </p>
+
+          <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Conheci%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20e%20agendar%20um%20hor%C3%A1rio." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-primary btn-large-cta">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.24-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.3 3.8.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1 1.24-.2 1.47-.94 1.47-.94z"/></svg>
+            AGENDAR PELO WHATSAPP
+          </a>
+
+          <div>
+            <span class="booking-contact-quick">
+              Atendimento WhatsApp: (21) 96964-1426
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DE LOCALIZAÇÃO
+         ========================================================================== -->
+    <section class="section-padding" id="localizacao">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Onde Estamos</span>
+          <h2 class="section-title title-serif">Localização Privilegiada</h2>
+          <p class="section-subtitle">
+            Ambiente aconchegante, seguro e de fácil acesso no centro comercial de Madureira.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-details-box reveal-on-scroll">
+            <h3 class="title-serif">Studio Mayla Peixoto</h3>
+
+            <div class="location-info-item">
+              <span class="location-icon">📍</span>
+              <div class="location-text">
+                <strong>Endereço</strong>
+                <span>Av. Min. Edgard Romero, 224 - Sala 203</span>
+                <span>Madureira Shopping Days - Madureira</span>
+                <span>Rio de Janeiro - RJ, CEP 21360-200</span>
+              </div>
+            </div>
+
+            <div class="location-info-item">
+              <span class="location-icon">⏰</span>
+              <div class="location-text">
+                <strong>Horário de Funcionamento</strong>
+                <span>Segunda a Sábado: Atendimento com agendamento prévio</span>
+              </div>
+            </div>
+
+            <div class="location-info-item">
+              <span class="location-icon">💬</span>
+              <div class="location-text">
+                <strong>Contato Direto</strong>
+                <span>WhatsApp: (21) 96964-1426</span>
+                <span>Instagram: @maylapeixotobeauty</span>
+              </div>
+            </div>
+
+            <a href="https://maps.google.com/?q=Av.+Min.+Edgard+Romero,+224+-+Madureira,+Rio+de+Janeiro+-+RJ" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-outline" 
+               style="width: 100%; margin-top: 1rem;">
+              Como Chegar (Google Maps)
+            </a>
+          </div>
+
+          <!-- Mapa Incorporado -->
+          <div class="map-frame-wrapper reveal-on-scroll">
+            <iframe 
+              src="https://maps.google.com/maps?q=Av.+Min.+Edgard+Romero,+224+-+Madureira,+Rio+de+Janeiro+-+RJ&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="Localização do Studio Mayla Peixoto no Madureira Shopping Days">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo-brand">
+            <span class="logo-name">MAYLA PEIXOTO</span>
+            <span class="logo-sub">STUDIO DE BELEZA</span>
+          </div>
+          <p>
+            Estúdio especializado em unhas, cílios e sobrancelhas. Atendimento refinado e personalizado para destacar a sua essência em Madureira, Rio de Janeiro.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Procedimentos</a></li>
+            <li><a href="#nail-design">Nail Design</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#sobre">Sobre a Profissional</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-col-title">Atendimento</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5521969641426" target="_blank" rel="noopener noreferrer">WhatsApp: (21) 96964-1426</a></li>
+            <li><a href="https://www.instagram.com/maylapeixotobeauty/" target="_blank" rel="noopener noreferrer">Instagram: @maylapeixotobeauty</a></li>
+            <li><span style="color: var(--color-text-muted); font-size: 0.88rem;">Av. Min. Edgard Romero, 224 - Sala 203</span></li>
+            <li><span style="color: var(--color-text-muted); font-size: 0.88rem;">Madureira Shopping Days - RJ</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Studio Mayla Peixoto. Todos os direitos reservados.</p>
+        <p>Desenvolvido com excelência & design exclusivo.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       BOTÃO FLUTUANTE DE WHATSAPP
+       ========================================================================== -->
+  <a href="https://wa.me/5521969641426?text=Ol%C3%A1%2C%20Mayla!%20Conheci%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20e%20agendar%20um%20hor%C3%A1rio." 
+     class="whatsapp-floating" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Fale conosco pelo WhatsApp">
+    <span class="whatsapp-label-box">Agende seu Horário</span>
+    <div class="whatsapp-badge-pulse">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.24-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.3 3.8.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1 1.24-.2 1.47-.94 1.47-.94z"/></svg>
+    </div>
+  </a>
+
+  <!-- ==========================================================================
+       JAVASCRIPT PURO (VANILLA JS)
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Atualizar dinamicamente o ano no Footer
+      const yearSpan = document.getElementById('currentYear');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      // 2. Efeito dinâmico do Header ao rolar a página
+      const header = document.getElementById('siteHeader');
+      const handleScroll = () => {
+        if (window.scrollY > 40) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      };
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll(); // Checagem inicial
+
+      // 3. Menu Mobile Hambúrguer
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const navMenu = document.getElementById('navMenu');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const menuMobileBtn = document.getElementById('menuMobileBtn');
+
+      // Exibir botão no mobile dentro do menu
+      if (window.innerWidth <= 992 && menuMobileBtn) {
+        menuMobileBtn.style.display = 'inline-flex';
+      }
+
+      const toggleMenu = () => {
+        hamburgerBtn.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+      };
+
+      hamburgerBtn.addEventListener('click', toggleMenu);
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (navMenu.classList.contains('active')) {
+            toggleMenu();
+          }
+        });
+      });
+
+      // 4. Animações de Entrada com Intersection Observer
+      const revealElements = document.querySelectorAll('.reveal-on-scroll');
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.15,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+      } else {
+        // Fallback para navegadores sem suporte
+        revealElements.forEach(el => el.classList.add('is-revealed'));
+      }
+
+      // 5. Galeria Lightbox Modal
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxCloseBtn = document.getElementById('lightboxCloseBtn');
+      const galleryCards = document.querySelectorAll('.gallery-card');
+
+      galleryCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const fullImgUrl = card.getAttribute('data-full');
+          const captionText = card.getAttribute('data-caption');
+          
+          if (fullImgUrl) {
+            lightboxImg.src = fullImgUrl;
+            lightboxImg.alt = captionText || 'Trabalho Studio Mayla Peixoto';
+            lightboxCaption.textContent = captionText || '';
+            lightboxModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      const closeLightbox = () => {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = '';
+      };
+
+      lightboxCloseBtn.addEventListener('click', closeLightbox);
+
+      // Fechar modal ao clicar fora da imagem
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+          closeLightbox();
+        }
+      });
+
+      // Fechar com a tecla ESC
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+          closeLightbox();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
